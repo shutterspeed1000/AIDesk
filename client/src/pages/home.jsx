@@ -1,4 +1,7 @@
 function Main() {
+  const [tech, setTech] = useState("");
+  const [description, setDescription] = useState("");
+
   return (
     <div>
       <p id="directions">
@@ -9,7 +12,7 @@ function Main() {
       </p>
       <lablel>Please select the technology you need assistance with.</lablel>
       <br></br>
-      <select name="cars" id="cars">
+      <select name="tech" id="tech">
         <option value="laptop">Laptop</option>
         <option value="application">Application</option>
         <option value="website">Website</option>
