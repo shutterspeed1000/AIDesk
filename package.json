@@ -4,11 +4,15 @@
   "description": "root for AIDesk",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "develop": "concurrently \"node server/server.js\" && \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "dotenv": "^16.4.0"
   }
 }
